@@ -9,6 +9,16 @@
 	<meta name="author" content="http://trendytheme.net/">
 
 	<title>Müslüm BİTGEN</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131129015-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131129015-1');
+</script>
+
 
   <!-- Web Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
@@ -90,7 +100,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt=""></a>
+					<a class="navbar-brand" href="index.html"><img src="assets/images/logo2.png" style="width: 267px; height: 65px; margin-top: -15px;" alt="Müslüm Bitgen"></a>
 				</div>
 
 				<div class="collapse navbar-collapse" id="custom-collapse">
@@ -150,7 +160,7 @@
             </div>
 
             <div class="download-button">
-              <a class="btn btn-info btn-lg" href="#contact"><i class="fa fa-paper-plane"></i>Send me message</a>
+              <a class="btn btn-info btn-lg" href="mailto:muslumbitgen@gmail.com"><i class="fa fa-paper-plane"></i>Send me message</a>
               <a class="btn btn-primary btn-lg" href="#"><i class="fa fa-download"></i>download my cv</a>
             </div>
           </div>
@@ -227,7 +237,7 @@
                         <ul class="timeline">
                             <li class="timeline-inverted">
                                 <div class="posted-date">
-                                  <span class="month">07-2018-I'm still working</span>
+                                  <span class="month">2018-...</span>
                                 </div><!-- /posted-date -->
 
                                 <div class="timeline-panel wow fadeInUp">
@@ -246,7 +256,7 @@
 
                             <li>
                                 <div class="posted-date">
-                                  <span class="month">09-2016/01-2017</span>
+                                  <span class="month">2016/2017</span>
                                 </div><!-- /posted-date -->
 
                                 <div class="timeline-panel wow fadeInUp">
@@ -264,7 +274,7 @@
                             </li>
 							 <li class="timeline-inverted">
                                 <div class="posted-date">
-                                  <span class="month">06-2016/10-2016</span>
+                                  <span class="month">2016/2016</span>
                                 </div><!-- /posted-date -->
 
                                 <div class="timeline-panel wow fadeInUp">
@@ -586,7 +596,24 @@
         </div><!-- /.row -->
       </div><!-- /.container -->
     </section><!-- End Works Section -->
+<script type="text/javascript"> 
+var sonuc = 0; fDay = 2; // 0: Pazar, 1: Pazartesi, ..., 5: Cuma, 6: Cumartesi
+var bas = new Date(2018, 10, 1); // Deneme amaçlı başlangıç tarihi: 1 Kasım 2010
+var bDay = bas.getDay(); // Başlangıç tarihi hangi gün?
+var son = new Date();// Deneme amaçlı bitiş tarihi : Mevcut Gün
+var sDay = son.getDay(); // Bitiş tarihi hangi gün?
+var fark = son - bas; // Başlangıç ve bitiş tarihleri arası milisaniye farkı
+var fGun = parseInt((fark/(1000*60*60*24)),10)+1; // Farkın gün bazında hesaplanması
 
+sonuc += bDay<=fDay ? 1:0; // Başlangıç tarihinin haftasında aranan gün (fDay) var mı?
+fGun -= 7-bDay;
+sonuc += parseInt((fGun/7),10); // Ara haftalarda kaç tane aranan gün var?
+fGun -= parseInt((fGun/7),10)*7;
+sonuc += sDay>=fDay ? 1:0; // Bitiş haftasında aranan gün var mı?
+
+var james = sonuc; // Tamamen işin artisliğindeyim :))
+console.log(james);
+</script> 
 
     <!-- Facts Section -->
     <section id="facts" class="facts-section text-center" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
